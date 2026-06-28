@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>GestionCodes</title>
+  <script>
+    // Redirige vers index.html en conservant le chemin
+    var path = window.location.pathname.slice(1);
+    window.location.replace(
+      window.location.origin + '/' + path.split('/')[0] +
+      '/?p=/' + path.split('/').slice(1).join('/') +
+      window.location.search + window.location.hash
+    );
+  </script>
+</head>
+<body></body>
+</html>
